@@ -7,7 +7,7 @@ module.exports = {
       args: 'run dev',
       cwd: './', // Current working directory is the root
       watch: true,
-      ignore_watch: ['node_modules', 'api'],
+      ignore_watch: ['node_modules', 'api', '*.timestamp-*'],
       env: {
         NODE_ENV: 'development',
         // Add other environment variables if needed
@@ -19,7 +19,7 @@ module.exports = {
       args: 'api/server.js',
       cwd: './', // Current working directory is the root
       watch: true,
-      ignore_watch: ['node_modules', 'dist', 'src'],
+      ignore_watch: ['node_modules', 'dist', 'src', '*.timestamp-*'],
       env: {
         NODE_ENV: 'development',
         // Add other environment variables if needed
